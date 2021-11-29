@@ -1,0 +1,322 @@
+@font-face {
+    font-family: bai-regular;
+    src: url(../fonts/bai-regular.ttf);
+}
+
+@font-face {
+    font-family: bai-bold;
+    src: url(../fonts/bai-bold.ttf);
+}
+
+
+@background-menu: #272d39;
+@background-context: #ffffff;
+@img-mini-logo: url('../img/mini-logo.jpg');
+@img-logo: url('../img/logo.jpg');
+@img-edit: url('../img/icons/edit.png');
+@img-add: url('../img/icons/add.png');
+@img-print: url('../img/icons/print.png');
+@img-monter: url('../img/icons/monter.png');
+@img-footerMail: url('../img/footerMail.jpg');
+@img-order-new: url('../img/icons/order.png');
+@img-measure-new: url('../img/icons/measure.png');
+@img-logout: url('../img/icons/logout.png');
+
+@font-text-menu: bai-regular;
+@color-text-menu: #ffffff;
+@size-text-menu: 13px;
+
+	/*----------------LOGOWANIE----------------*/
+
+	body.login {
+		.border-login {
+			width: 400px;
+			height: auto;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+
+		.logo {
+			width: 180px;
+			height: 80px;
+			background-image: @img-logo;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+	}
+body {
+	overflow-x: hidden;
+	.btn-sm {
+		font-size: 10px;
+		padding: 4px;
+	}
+	.left-menu {
+		width: 13%;
+		height: 100%;
+		background-color: @background-menu;
+		padding-top: 20px;
+		float: left;
+		position: fixed;
+		.mini-logo {
+			background-image: @img-mini-logo;
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+		}
+		ul {
+			padding-left: 10px;
+			padding-top: 20px;
+			list-style: none;
+			display: block;
+			li {
+				width: 100%;
+				height: 30px;
+				background: black;
+				opacity: 0.3;
+				float: right;
+				margin-right: 0px;
+				margin-top: 10px;
+				text-align: right;
+			}
+			li a {
+				font-family: @font-text-menu;
+				color: @color-text-menu;
+				font-size: @size-text-menu;
+				margin-right: 10px;
+				margin-top: 8px;
+				float: right;
+			}
+		}
+
+	}
+
+	.icon-new-order {
+		width: 64px;
+		height: 64px;
+		background: @img-order-new;
+		margin-bottom: 10px;
+	}
+	.icon-new-measure {
+		width: 64px;
+		height: 64px;
+		background: @img-measure-new;
+		margin-bottom: 10px;
+	}
+
+	h4 {
+		font-size: 24px;
+		padding: 20px;
+		font-family: @font-text-menu;
+	}
+
+	.context {
+		background-color: @background-context;
+		width: 96%;
+		margin-left: 2%;
+		font-family: verdana;
+		font-size: 11px;
+		line-height: 4mm;
+		padding-top: 90px;
+		h3 {
+			width: 40%;
+			height: 40px;
+			color: #272d39;
+			font-size: 20px;
+			padding-top: 10px;
+			font-family: bai-bold;
+			margin-bottom: 20px;
+		}
+
+		b {
+			font-weight: bold;
+		}
+
+		h2 {
+			height: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: @background-menu;
+			font-family: bai-bold;
+		}
+
+		.table {
+			width: 100%;
+			font-size: 12px;
+			margin-top: 10px;
+
+			.btn-small {
+				height: 14px;
+				font-size: 9px;
+				padding-top: 0px;
+			}
+
+			th {
+				font-weight: bold;
+			}
+
+			tr[archive="1"] {
+				background: silver;
+			}
+			tr[activeLack="1"] {
+				background: #dd8366;
+			}
+		}
+
+		select.form-control {
+			padding: 5px;
+			font-size: 14px;
+		}
+	}
+
+	.card {
+		margin-top: 10px;
+	}
+
+	.card .card-text{
+		padding: 10px;
+	}
+
+	.card {
+
+		ul {
+			li {
+				margin-top: 8px;
+			}
+		}
+	}
+
+	.card[archive="1"] {
+			background: silver;
+	}
+
+	.editIcon {
+		width: 16px;
+		height: 16px;
+		background-image: @img-edit;
+		float: right;
+		cursor: pointer;
+		border: 0px;
+		background-color: transparent;
+	}
+	.editIcon[view="mod"][archive="1"][per="0"] {
+		display: none;
+	}
+	.editIcon[view="mod"][per="0"] {
+		display: none;
+	}
+	.editIcon[view="all"][archive="1"][per="0"] {
+		display: none;
+	}
+
+	.addIcon {
+		width: 23px;
+		height: 23px;
+		background-image: @img-add;
+		float: right;
+		cursor: pointer;
+		border: 0px;
+		background-color: transparent;
+		margin-bottom: 5px;
+	}
+	.addIcon[view="mod"][archive="1"][per="0"] {
+		display: none;
+	}
+	.addIcon[view="mod"][per="0"] {
+		display: none;
+	}
+	.addIcon[view="all"][archive="1"][per="0"] {
+		display: none;
+	}
+
+	/*----------STYLE FORMULARZY------------*/
+
+	form {
+		h4 {
+			font-family: @font-text-menu;
+			color: @background-menu;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.card-text {
+		padding: 10px;
+	}
+
+	.row {
+		margin-top: 10px;
+	}
+
+	textarea {
+		min-height: 150px;
+	}
+
+	.form-control {
+		margin-top: 10px;
+	}
+
+	.printButton {
+		width: 32px;
+		height: 32px;
+		background-image: @img-print;
+	}
+
+	/*-------------------STYLE CHARMONOGRAMU PRAC - timetable-----------------*/
+	table.tableWeek {
+		tr[actualWeek="true"] {
+			background: yellow;
+		}
+		.weekBorder {
+			height: 22px;
+			border: 1px solid #202c31;
+			float: left;
+			padding: 3px;
+			background-color: #3caee4;
+			font-size: 10px;
+			color: black;
+			font-family: @font-text-menu;
+			margin-left: 6px;
+			margin-top: 3px;
+		}
+		.weekBorder[lack="1"] {
+			background: red;
+		}
+		.weekBorder[monter="1"] {
+			padding-right: 18px;
+			background-image: @img-monter;
+			background-repeat: no-repeat;
+			background-position: right center;
+		}
+		.weekBorder[archive="1"] {
+			background: silver;
+			opacity: 0.4;
+			border: 0px;
+		}
+	}
+
+	/*------------------------STYLE HARMONOGRAMU MONTAŻOWEGO----------------------*/
+	.borderTimetableMonter {
+		height: 25px;
+		background: #b0c7ec;
+		border: 1px solid #1b3f7a;
+		position: relative;
+		margin-left: 0px;
+		text-align: center;
+		color: #1b3f7a;
+		font-size: 10px;
+		padding-top: 5px;
+		margin-bottom: 5px;
+	}
+	.tableMonter {
+		margin-right: 20px;
+	}
+
+	.logout {
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+		margin-left: 15px;
+		margin-bottom: -10px;
+		background-image: @img-logout;
+	}
+}

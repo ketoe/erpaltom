@@ -1,0 +1,262 @@
+@font-face {
+  font-family: bai-regular;
+  src: url(../fonts/bai-regular.ttf);
+}
+@font-face {
+  font-family: bai-bold;
+  src: url(../fonts/bai-bold.ttf);
+}
+/*----------------LOGOWANIE----------------*/
+body.login .border-login {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+body.login .logo {
+  width: 180px;
+  height: 80px;
+  background-image: url('../img/logo.jpg');
+  margin: 0 auto;
+  margin-top: 50px;
+}
+body {
+  overflow-x: hidden;
+  /*----------STYLE FORMULARZY------------*/
+  /*-------------------STYLE CHARMONOGRAMU PRAC - timetable-----------------*/
+  /*------------------------STYLE HARMONOGRAMU MONTAŻOWEGO----------------------*/
+}
+body .btn-sm {
+  font-size: 10px;
+  padding: 4px;
+}
+body .left-menu {
+  width: 13%;
+  height: 100%;
+  background-color: #272d39;
+  padding-top: 20px;
+  float: left;
+  position: fixed;
+}
+body .left-menu .mini-logo {
+  background-image: url('../img/mini-logo.jpg');
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+body .left-menu ul {
+  padding-left: 10px;
+  padding-top: 20px;
+  list-style: none;
+  display: block;
+}
+body .left-menu ul li {
+  width: 100%;
+  height: 30px;
+  background: black;
+  opacity: 0.3;
+  float: right;
+  margin-right: 0px;
+  margin-top: 10px;
+  text-align: right;
+}
+body .left-menu ul li a {
+  font-family: bai-regular;
+  color: #ffffff;
+  font-size: 13px;
+  margin-right: 10px;
+  margin-top: 8px;
+  float: right;
+}
+body .icon-new-order {
+  width: 64px;
+  height: 64px;
+  background: url('../img/icons/order.png');
+  margin-bottom: 10px;
+}
+body .icon-new-measure {
+  width: 64px;
+  height: 64px;
+  background: url('../img/icons/measure.png');
+  margin-bottom: 10px;
+}
+body h4 {
+  font-size: 24px;
+  padding: 20px;
+  font-family: bai-regular;
+}
+body .context {
+  background-color: #ffffff;
+  width: 96%;
+  margin-left: 2%;
+  font-family: verdana;
+  font-size: 11px;
+  line-height: 4mm;
+  padding-top: 90px;
+}
+body .context h3 {
+  width: 40%;
+  height: 40px;
+  color: #272d39;
+  font-size: 20px;
+  padding-top: 10px;
+  font-family: bai-bold;
+  margin-bottom: 20px;
+}
+body .context b {
+  font-weight: bold;
+}
+body .context h2 {
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #272d39;
+  font-family: bai-bold;
+}
+body .context .table {
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+body .context .table .btn-small {
+  height: 14px;
+  font-size: 9px;
+  padding-top: 0px;
+}
+body .context .table th {
+  font-weight: bold;
+}
+body .context .table tr[archive="1"] {
+  background: silver;
+}
+body .context .table tr[activeLack="1"] {
+  background: #dd8366;
+}
+body .context select.form-control {
+  padding: 5px;
+  font-size: 14px;
+}
+body .card {
+  margin-top: 10px;
+}
+body .card .card-text {
+  padding: 10px;
+}
+body .card ul li {
+  margin-top: 8px;
+}
+body .card[archive="1"] {
+  background: silver;
+}
+body .editIcon {
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/icons/edit.png');
+  float: right;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+}
+body .editIcon[view="mod"][archive="1"][per="0"] {
+  display: none;
+}
+body .editIcon[view="mod"][per="0"] {
+  display: none;
+}
+body .editIcon[view="all"][archive="1"][per="0"] {
+  display: none;
+}
+body .addIcon {
+  width: 23px;
+  height: 23px;
+  background-image: url('../img/icons/add.png');
+  float: right;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+body .addIcon[view="mod"][archive="1"][per="0"] {
+  display: none;
+}
+body .addIcon[view="mod"][per="0"] {
+  display: none;
+}
+body .addIcon[view="all"][archive="1"][per="0"] {
+  display: none;
+}
+body form h4 {
+  font-family: bai-regular;
+  color: #272d39;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .card-text {
+  padding: 10px;
+}
+body .row {
+  margin-top: 10px;
+}
+body textarea {
+  min-height: 150px;
+}
+body .form-control {
+  margin-top: 10px;
+}
+body .printButton {
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/icons/print.png');
+}
+body table.tableWeek tr[actualWeek="true"] {
+  background: yellow;
+}
+body table.tableWeek .weekBorder {
+  height: 22px;
+  border: 1px solid #202c31;
+  float: left;
+  padding: 3px;
+  background-color: #3caee4;
+  font-size: 10px;
+  color: black;
+  font-family: bai-regular;
+  margin-left: 6px;
+  margin-top: 3px;
+}
+body table.tableWeek .weekBorder[lack="1"] {
+  background: red;
+}
+body table.tableWeek .weekBorder[monter="1"] {
+  padding-right: 18px;
+  background-image: url('../img/icons/monter.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+body table.tableWeek .weekBorder[archive="1"] {
+  background: silver;
+  opacity: 0.4;
+  border: 0px;
+}
+body .borderTimetableMonter {
+  height: 25px;
+  background: #b0c7ec;
+  border: 1px solid #1b3f7a;
+  position: relative;
+  margin-left: 0px;
+  text-align: center;
+  color: #1b3f7a;
+  font-size: 10px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+body .tableMonter {
+  margin-right: 20px;
+}
+body .logout {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-bottom: -10px;
+  background-image: url('../img/icons/logout.png');
+}
